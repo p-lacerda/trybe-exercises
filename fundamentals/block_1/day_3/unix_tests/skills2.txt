@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Javascript
+Python
+CSS
+Database
+English
