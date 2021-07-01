@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph" class="same">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph" class="same">Segundo parágrafo!</p>
+
+    <script>
+      var title = document.querySelector('#page-title').innerText = "Django Livre";
+      const paragraph = document.querySelector("#paragraph");
+      paragraph.style.color = "red";
+      var sub = document.querySelector("#subtitle").innerText = "Lançado em 2012"
+      var second = document.querySelector("#second-paragraph").innerText = "Um dos melhores filmes de todos os tempos"
+
+      document.querySelector('#second-paragraph').style = "color: red;"
+
+      document.querySelector('h4').style = 'color: blue;'
+
+    </script>
+  </body>
+</html>
