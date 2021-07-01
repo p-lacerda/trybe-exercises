@@ -43,19 +43,48 @@
     </main>
     <script>
         //1
-        document.querySelectorAll('.center-content p')[1].innerText = "Eu me vejo daqui a 2 anos como uma pessoa profissional, com uma carreira estabilizada, e trabalhando no exterior"
+        function changeParagraph(){
+          let paragraph = document.querySelectorAll('.center-content p')[1];
+          paragraph.innerText = "Eu me vejo daqui a 2 anos como uma pessoa profissional, com uma carreira estabilizada, e trabalhando no exterior"
+        }
+        changeParagraph()
+
         //2
-        document.querySelector('.main-content').style = "background-color: rgb(76,164,109)"
+        function changeColor(){
+          let color = document.querySelector('.main-content');
+          color.style = "background-color: rgb(76,164,109)";
+        }
+        changeColor();
+        
         //3
-        document.querySelector('.main-content .center-content').style = "background-color: white"
+        function changeColorWhite(){
+        let white = document.querySelector('.main-content .center-content')
+        white.style = "background-color: white"
+        }
+        changeColorWhite();
+
+        
         //4
-        document.querySelector('.title').innerText = "Exercício 5.1 - JavaScript"
+        function changeTitle(){
+          let change = document.querySelector('.title');
+          change.innerText = "Exercício 5.1 - JavaScript"
+        }
+        changeTitle();
         //5
-        document.querySelectorAll("p")[1].style = 'text-transform: uppercase'
+        function upperCase(){
+          let up = document.querySelectorAll("p")[0]
+          up.style = 'text-transform: uppercase'
+        }
+        upperCase();
+
         //6
-        console.log(document.getElementsByTagName('p')[0].innerText)
-        console.log(document.getElementsByTagName('p')[1].innerText)
-        console.log(document.getElementsByTagName('p')[2].innerText)
+        function showParagraphs() {
+          let paragraphs = document.getElementsByTagName('p');
+          for (let i = 0; i < paragraphs.length; i += 1){
+            console.log(paragraphs[i].innerHTML);
+          }
+        }
+        showParagraphs();
       
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
